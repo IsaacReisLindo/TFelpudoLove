@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     {
 
         estaNoChao = Physics2D.OverlapCircle(posicaoDoPe.position, 0.3f, chao);
+        animator.SetBool("estaNoChao", estaNoChao);
+        animator.SetFloat("velocidadeY", Felpudo.velocity.y);
 
         direcao = Input.GetAxis("Horizontal");  
         Felpudo.velocity = new Vector2(direcao * velocidade, Felpudo.velocity.y);
@@ -34,6 +36,8 @@ public class PlayerController : MonoBehaviour
            OlharDireita = !OlharDireita;
             transform.Rotate(0f, 180f, 0f);
         }
+
+
 
 
         if (estaNoChao && Input.GetButtonDown("Jump"))
