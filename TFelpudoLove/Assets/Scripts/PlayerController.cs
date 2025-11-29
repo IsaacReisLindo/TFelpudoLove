@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D Felpudo;
     public Transform posicaoDoPe;
-    DialogueSystem dialogueSystem;
+    
     public LayerMask chao;
 
     private float direcao;
@@ -16,13 +16,13 @@ public class PlayerController : MonoBehaviour
     private bool estaNoChao;
     private bool OlharDireita = true;
     public Animator animator;
-    public Transform npc;
+    
 
 
 
     private void Awake()
     {
-        dialogueSystem = FindObjectOfType<DialogueSystem>();
+     
     }
 
 
@@ -58,14 +58,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        if (Mathf.Abs(transform.position.x - npc.position.x) < 5.0f)
-        {
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                dialogueSystem.Next();
-            }
-        }
+        
 
     }
 }
