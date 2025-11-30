@@ -153,4 +153,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("Menu");
     }
+    public void CarregarCenaJogo()
+    {
+        Time.timeScale = 1f; // <- IMPORTANTÍSSIMO
+        SceneManager.LoadScene("JOGO");
+    }
+
 }
