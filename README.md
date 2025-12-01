@@ -13,7 +13,7 @@ Objetivo: Encontrar a Fofura, para isso em cada fase ele precisara cumprir certo
 
 derrota: perder toda a sua vida
 
-Mecânicas e Controles Movimentação, tome cuidado com os obstaculos enquanto controla o movimento do Felpudo com W,A,S,D e na segunda fase espaço para pular, na terceira fase use o botão esquerdo do mouse para pular tomando cuidado para não sair do mapa,  Ataque tomando cuidado para não ser acertado, aperte a tecla espaço para atacar 
+Mecânicas e Controles Movimentação, tome cuidado com os obstaculos enquanto controla o movimento do Felpudo com W,A,S,D e E para interagir com o npc, Na segunda fase espaço para pular e botão direito para atacar, na terceira fase use o botão esquerdo do mouse para pular tomando cuidado para não sair do mapa,  Ataque tomando cuidado para não ser acertado, aperte a tecla espaço para atacar 
 
 
 Para que Foi desenvolvido? Tendo sido feito Por Isaac Reis e Lucas Oliveira, o jogo foi Produzido no segundo semestre da faculdade de Jogos Digitais da UNEB como projeto final da matéria de Programação de Jogos de Murilo Borato
