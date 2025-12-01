@@ -9,13 +9,15 @@ public class PlayerJump : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private Animator animator;
+    public int vidaMax = 3;
+    public int vidaAtual;
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        vidaAtual = vidaMax;
     }
 
     void Update()
@@ -32,5 +34,22 @@ public class PlayerJump : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             animator.SetTrigger("Jump");
         }
+    }
+
+    public void TomarDano(int dano)
+    {
+        vidaAtual -= dano;
+        Debug.Log("Player tomou dano! Vida atual: " + vidaAtual);
+
+        if (vidaAtual <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    void Morrer()
+    {
+        Debug.Log("PLAYER MORREU");
+        // Aqui você reinicia a fase, animação, game over… o que quiser
     }
 }

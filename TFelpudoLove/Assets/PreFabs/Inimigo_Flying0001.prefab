@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4719745668707069149}
   - component: {fileID: 8851158002397048730}
   - component: {fileID: 8775187251144195694}
+  - component: {fileID: 2333648088207623833}
   m_Layer: 0
   m_Name: Inimigo_Flying0001
   m_TagString: inimigo
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 8f2d2dfe8d8710e43a27486f981b6bbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -195,3 +196,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Destroyparticle: {fileID: 5985429334270797989, guid: 105771a532f1c654a804e2d0057029fd, type: 3}
   hitFlashDuration: 0.1
+--- !u!114 &2333648088207623833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9118186007127044899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2239366cd1378af48ae1ad81e66e783b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dano: 1
