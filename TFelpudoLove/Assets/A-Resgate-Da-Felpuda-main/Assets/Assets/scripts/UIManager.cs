@@ -33,4 +33,9 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(nomeCenaMenu);
     }
+    public void IrParaUltimaCena()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("FinalAmor");
+    }
 }

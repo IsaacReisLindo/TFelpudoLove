@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D Felpudo;
     public Transform posicaoDoPe;
-    
+    public int pena;
     public LayerMask chao;
 
     private float direcao;
@@ -60,5 +60,14 @@ public class PlayerController : MonoBehaviour
 
         
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("pena"))
+        {
+            pena++;
+            Destroy(collision.gameObject);
+        }
     }
 }

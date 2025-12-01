@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class TrocaCena : MonoBehaviour
 {
-    public string cenaParaCarregar = "FelpudoRace";
+    public string cenaParaCarregar = "Menu";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

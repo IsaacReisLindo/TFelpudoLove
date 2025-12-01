@@ -11,7 +11,7 @@ public class MenuScript : MonoBehaviour
     }
     public void Jogar()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Felpudo Race");
     }
 
 
@@ -30,4 +30,6 @@ public class MenuScript : MonoBehaviour
     {
         tutorialPanel.SetActive(false);
     }
+
+
 }

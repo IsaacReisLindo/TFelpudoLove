@@ -49,6 +49,7 @@ public class BossVida : MonoBehaviour
 
     public void TomarDano(int dano) {
         vidaAtual -= dano;
+        UpdateHealthBar();
         StartCoroutine(Piscar()); // faz o boss piscar
 
         if (vidaAtual <= 0) {
