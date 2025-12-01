@@ -7,6 +7,7 @@ public class GameManagerRaces : MonoBehaviour
     public int inimigosNecessarios = 5;
     public GameObject bossPrefab;
     public Transform bossSpawn;
+    public GeradorInimigosRaces geradorInimigos; // arraste no Inspector
 
     private bool bossInvocado = false;
     private bool bossMorto = false;
@@ -34,11 +35,25 @@ public class GameManagerRaces : MonoBehaviour
         }
     }
 
-    void InvocarBoss() {
+    void InvocarBoss()
+    {
         bossInvocado = true;
         Debug.Log("Boss apareceu!");
+
+        if (geradorInimigos == null)
+        {
+            Debug.LogError("? ERRO: geradorInimigos NÃO está atribuído no inspector!");
+        }
+        else
+        {
+            Debug.Log("?? Parando spawn agora!");
+            geradorInimigos.PararSpawn();
+        }
+
         Instantiate(bossPrefab, bossSpawn.position, Quaternion.identity);
     }
+
+
 
     // Chame este método quando o boss morrer
     public void BossMorreu() {
@@ -46,4 +61,6 @@ public class GameManagerRaces : MonoBehaviour
         bossInvocado = false;
         Debug.Log("Boss derrotado!");
     }
+
+
 }

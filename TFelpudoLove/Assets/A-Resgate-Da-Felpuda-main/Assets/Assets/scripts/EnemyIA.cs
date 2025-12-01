@@ -10,6 +10,8 @@ public class EnemyIA : MonoBehaviour
     private float healthPercent;      //Porcentagem de vida
     public int health = 10;              //Vida total
 
+    [SerializeField]
+    private Animator animator;
 
     void Start() {
         healthBarScale = healthBar.localScale;
@@ -37,6 +39,8 @@ public class EnemyIA : MonoBehaviour
 
             if (health <= 0) {
                 GameManagerRaces.instance.InimigoMorto();
+                
+                this.animator.SetBool("Derrotado",true);
                 Destroy(healthBarObject);
                 Destroy(this.gameObject);
             }
@@ -56,11 +60,15 @@ public class EnemyIA : MonoBehaviour
     public void TakeDamage(int damage) {
         health -= damage;
         UpdateHealthBar();
+
     }
     public void InimigoMorto()
     {
-        // Implemente aqui a lógica desejada ao matar um inimigo, por exemplo:
-        //AddScore(10); // Exemplo: adiciona pontos ao score
+        animator.SetTrigger("Morte");
+
+        // Destroi depois do tempo da animação
+        Destroy(gameObject, 0.8f);
+        Destroy(healthBarObject, 0.8f);
     }
 
 }

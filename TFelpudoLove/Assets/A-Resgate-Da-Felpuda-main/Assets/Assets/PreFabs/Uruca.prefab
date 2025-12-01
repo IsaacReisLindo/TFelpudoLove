@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062481839747750542}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.76, y: -0.39, z: 0}
   m_LocalScale: {x: 0.9285051, y: 0.9285051, z: 0.9285051}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5364907673588033761}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5364907673588033564
 GameObject:
@@ -60,6 +60,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5364907673588033564}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.24, y: 13.87, z: 0}
   m_LocalScale: {x: 1.077, y: 1.077, z: 1.077}
@@ -67,7 +68,6 @@ Transform:
   m_Children:
   - {fileID: 5285075314822705147}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5364907673588033762
 SpriteRenderer:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5eff45e9b0bdb3b4ca76e70c1352fe28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 4093796008697097463, guid: d5ab0dc4b7d92bc4cbd03f934a01ad68, type: 3}
+  bulletPrefab: {fileID: 6552620600508385692, guid: c71f4f34ffe7a0948ad7d7ad28b8b1f6, type: 3}
   pontoTiro: {fileID: 5285075314822705147}
   intervaloTiro: 2
 --- !u!114 &5917573641465791270
@@ -172,7 +172,7 @@ MonoBehaviour:
   vidaMaxima: 100
   vidaAtual: 0
   efeitoMorte: {fileID: 982521646754976935, guid: 3590dee0eed195b429bc9b1a934b295a, type: 3}
-  tempoPiscar: 0.1
+  tempoPiscar: 0
   corDano: {r: 1, g: 0, b: 0, a: 1}
 --- !u!61 &5686020594626394082
 BoxCollider2D:
@@ -184,6 +184,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -217,6 +236,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
