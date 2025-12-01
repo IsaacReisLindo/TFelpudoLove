@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
     public void CarregarCenaJogo()
     {
         Time.timeScale = 1f; // <- IMPORTANTÍSSIMO
-        SceneManager.LoadScene("JOGO");
+        SceneManager.LoadScene("TELAINICIAL");
     }
 
 }

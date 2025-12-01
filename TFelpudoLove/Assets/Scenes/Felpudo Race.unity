@@ -4144,7 +4144,7 @@ MonoBehaviour:
   finalScoreTextBad: {fileID: 316420461}
   gameWonPanel: {fileID: 1316674740}
   finalScoreTextGood: {fileID: 563635013}
-  scoreMax: 1500
+  scoreMax: 200
 --- !u!4 &1629776077
 Transform:
   m_ObjectHideFlags: 0

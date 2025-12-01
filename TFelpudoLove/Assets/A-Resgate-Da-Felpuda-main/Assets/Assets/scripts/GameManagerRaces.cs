@@ -11,6 +11,14 @@ public class GameManagerRaces : MonoBehaviour
     private bool bossInvocado = false;
     private bool bossMorto = false;
 
+
+
+
+    void Start()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("TimeScale resetado!");
+    }
     void Awake() {
         instance = this;
     }

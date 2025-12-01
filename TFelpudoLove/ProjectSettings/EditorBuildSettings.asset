@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Felpudo Race.unity
     guid: 813f48dcb4ae35c44859b478d74a99e7
   - enabled: 1
+    path: Assets/A-Resgate-Da-Felpuda-main/Assets/TELAiNICIAL.unity
+    guid: 049561ac58228cc4e9a1051f2c574e7e
+  - enabled: 1
     path: Assets/A-Resgate-Da-Felpuda-main/Assets/Scenes/JOGO.unity
     guid: 58097816a65530640a67371172b2244c
   m_configObjects: {}
